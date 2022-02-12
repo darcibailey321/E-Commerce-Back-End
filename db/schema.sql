@@ -1,28 +1,30 @@
-DROP DATABASE IF EXISTS employees_db;
-CREATE DATABASE employees_db;
+DROP DATABASE IF EXISTS ecommerce_db;
+CREATE DATABASE ecommerce_db;
 
-USE employees_db;
+USE ecommerce_db;
 
-CREATE TABLE category(
+CREATE TABLE category (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   category_name VARCHAR(30) NOT NULL,
 );
 
-CREATE TABLE product(
+CREATE TABLE product (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   product_name VARCHAR(30) NOT NULL,
   price DECIMAL NOT NULL,
-  stock INT(size,10)  NOT NULL,
-  category_id INt
-  FOREIGN KEY (product_id)
-  REFERENCES category(id)
+  stock INT(10)  NOT NULL,
+  category_id INT,
+  -- FOREIGN KEY (category)
+  -- REFERENCES category(id)
 );
 
-CREATE TABLE employee(
-  id INT PRIMARY KEY,
-  first_name VARCHAR(30) NOT NULL,
-  last_name VARCHAR(30) NOT NULL,
-  role_id INT NOT NULL,
-  manageer_id INT
-    NULL
+CREATE TABLE tag (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+tag_name VARCHAR(30) NOT NULL,
+);
+
+CREATE TABLE ProductTag (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+product_id VARCHAR(30) NOT NULL,
+tag_id VARCHAR(30) NOT NULL,
 );
