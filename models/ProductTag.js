@@ -16,13 +16,24 @@ ProductTag.init(
     product_id: {
       type: DataTypes.STRING,
       allowNull: false,
+      references: {
+        model: "product",
+        key: id,
+        unique: false,
+      },
     },
 
-   tag_id: {
+    tag_id: {
       type: DataTypes.STRING,
       allowNull: false,
+      references: {
+        model: "product",
+        key: "id",
+        unique: false,
+      },
     },
   },
+
   {
     sequelize,
     timestamps: false,
