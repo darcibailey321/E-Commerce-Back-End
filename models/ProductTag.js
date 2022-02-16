@@ -18,7 +18,7 @@ ProductTag.init(
       allowNull: false,
       references: {
         model: "product",
-        key: id,
+        key: "id",
         unique: false,
       },
     },
