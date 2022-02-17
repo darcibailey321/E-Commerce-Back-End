@@ -1,7 +1,10 @@
 # E-Commerce-Back-End
  ## Description
-  This is a back end application for an e-commerce website that uses the latest technologies.
+  This is a back end application for an e-commerce website.
   ## Usage
-  This is for anyone needing to quickly create a page displaying multiple employees and their title and other important information.
+  This is for anyone looking to create a backend store of products.
   
-  ## Test Video  
+  ## Walkthrough Video
+  https://drive.google.com/file/d/1joRxRI8ufx2kia43ZPlX4XJRLJcrU8gr/view
+
+  
